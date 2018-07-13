@@ -1,0 +1,11 @@
+main role="main"
+  section.jumbotron.text-center
+    .container
+      h1.jumbotron-heading
+        = MY_APP[:name]
+      p.lead.text-muted
+        = "#{MY_APP[:name]} es Rails 5"
+      p
+        = link_to "Un link", '#', class: 'btn btn-primary my-2'
+        | &nbsp;
+        a.btn.btn-secondary.my-2 href="mailto:#{MY_APP[:contact_email]}"  Contacto
